@@ -34,7 +34,7 @@
             <div class="form">
                 <h1>注&nbsp;册&nbsp;顾&nbsp;客</h1>
                 <p>顾&nbsp;客&nbsp;姓&nbsp;名<input type="text" id="custName" name="custName"/></p>
-                <p>身&nbsp;份&nbsp;证&nbsp;号<input type="number" id="custPid" name="custPid"/></p>
+                <p>身&nbsp;份&nbsp;证&nbsp;号<input type="text" id="custPid" name="custPid"/></p>
                 <p>电&nbsp;话&nbsp;号&nbsp;码<input type="number" id="custTel" name="custTel"/></p>
                 <p>家&nbsp;庭&nbsp;地&nbsp;址<input type="text" id="custAddress" name="custAddress"/></p>
                 <button type="submit" id="login-button" onclick="regSubmit()">&nbsp;提&nbsp;交&nbsp;注&nbsp;册&nbsp;&nbsp;</button>

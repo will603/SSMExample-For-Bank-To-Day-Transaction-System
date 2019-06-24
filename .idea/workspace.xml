@@ -8,46 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38131239-7ac0-432c-a68c-456fe2b353da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/BankcardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/BankcardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/Bankcard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/Bankcard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/BankcardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/BankcardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/BankcardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/BankcardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/BankCard.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/BankCard.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/Customer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/Customer.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/Transaction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/Transaction.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page4.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page5.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/controller/BankcardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/controller/BankcardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/pojo/Bankcard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/pojo/Bankcard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/service/BankcardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/service/BankcardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/service/impl/BankcardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/com/ssm/service/impl/BankcardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/sql/BankCard.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/sql/Customer.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/classes/sql/Transaction.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page4.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/home/page5.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/regist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/BankcardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/BankcardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Bankcard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Bankcard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/BankcardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/BankcardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/BankcardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/BankcardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/BankCard.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/Customer.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sql/Transaction.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMExample/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -107,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page3.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-504">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="720">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -116,17 +81,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+            <state relative-caret-position="473">
+              <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="905">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/BankcardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
+            <state relative-caret-position="1896">
               <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,11 +213,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/BankcardServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/BankcardService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page4.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page5.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/BankcardController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page3.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" />
       </list>
     </option>
   </component>
@@ -260,7 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -309,33 +318,6 @@
               <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,10 +327,28 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SSMExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSMExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -552,7 +552,9 @@
       <workItem from="1561184272627" duration="1024000" />
       <workItem from="1561335090941" duration="9172000" />
       <workItem from="1561344723735" duration="47000" />
-      <workItem from="1561344895702" duration="1262000" />
+      <workItem from="1561344895702" duration="2045000" />
+      <workItem from="1561347367636" duration="688000" />
+      <workItem from="1561350295378" duration="269000" />
     </task>
     <task id="LOCAL-00001" summary="IDEA 搭建的 SSM 项目 ： 学生信息及成绩管理系统">
       <created>1560829565939</created>
@@ -610,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561184522668</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="IDEA 搭建的 SSM 项目 ： 银行日常交易系统">
+      <created>1561346372225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561346372225</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -622,12 +631,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178678000" />
+    <option name="totallyTimeSpent" value="180418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -773,16 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-363">
           <caret line="834" selection-start-line="834" selection-end-line="834" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,26 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/BankcardService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1044,13 +1024,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1114,25 +1087,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/page3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="720">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/BankcardServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
+        <state relative-caret-position="1896">
           <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="905">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>

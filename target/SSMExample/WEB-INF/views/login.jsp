@@ -69,6 +69,7 @@
             success:function (data) {
                 if (data.custPid==custPid) 
                     window.location.href="<%=basePath%>getHome.action";
+                else alert("身份证错误，或者不存在！");
             },
             error:function(data){
                 alert("出现异常情况，登录失败!");
