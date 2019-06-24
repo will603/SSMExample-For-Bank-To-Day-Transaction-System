@@ -1,4 +1,4 @@
-# SSMExample-For-Bank-To-Day-Transaction-System
+#SSMExample-For-Bank-To-Day-Transaction-System
 使用IDEA开发工具搭建的SSM项目：银行日常交易系统
 
 开发环境：jdk-12 + tomcat-9 + mysql-8.0
