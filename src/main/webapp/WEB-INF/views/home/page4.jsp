@@ -53,11 +53,7 @@
                 dataType: "json",
                 // contentType: "application/json; charset=utf-8",
                 success: function (data) {
-                    if (data!=null) {
-                        window.location.href = "<%=basePath%>getSiteInfo.action"
-                    }else{
-                        alert("该账户已挂失，无法进行存款操作！");
-                    }
+                    alert(data.msg);
                 },
                 error: function (data) {
                     alert("出现异常情况，存入失败!");

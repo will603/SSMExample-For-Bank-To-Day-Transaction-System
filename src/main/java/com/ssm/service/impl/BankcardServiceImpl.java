@@ -7,6 +7,11 @@ import com.ssm.service.BankcardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.FieldPosition;
+import java.text.Format;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -70,5 +75,20 @@ public class BankcardServiceImpl implements BankcardService {
             return row2 > 0 ? true : false;
         }
         return false;
+    }
+
+    @Override
+    public String getCardId() throws Exception {
+        //621 7858 0000 521414 02
+        String str = "621";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String strDate = simpleDateFormat.format(new Date());
+        String[] arr = strDate.split(" ");
+        String[] strings1 = arr[0].split("-");
+        String[] strings2 =arr[1].split(":");
+        for (String s : strings1) str+=s;
+        str+="00";
+        for (String s : strings2) str+=s;
+        return str;
     }
 }

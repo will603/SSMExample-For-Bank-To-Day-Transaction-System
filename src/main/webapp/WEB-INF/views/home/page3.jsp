@@ -67,7 +67,9 @@
                 dataType: "json",
                 // contentType: "application/json; charset=utf-8",
                 success: function (data) {
-                    if (data.balance < Tmoney) {
+                    if (data.password != params.password){
+                        alert("密码错误！")
+                    } else if (data.balance < Tmoney) {
                         alert("余额不足！")
                     } else {
                         $.ajax({

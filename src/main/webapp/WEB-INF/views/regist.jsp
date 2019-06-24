@@ -69,7 +69,12 @@
             dataType:"json",
             // contentType: "application/json; charset=utf-8",
             success:function (data) {
-                window.location.href="<%=basePath%>getLog.action"
+                if (data!=null) {
+                    alert("注册成功!");
+                    window.location.href = "<%=basePath%>getLog.action"
+                }else{
+                    alert("出现异常情况，注册顾客失败!");
+                }
             },
             error:function(data){
                 alert("出现异常情况，注册顾客失败!");

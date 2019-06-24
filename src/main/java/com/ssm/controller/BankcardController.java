@@ -41,6 +41,7 @@ public class BankcardController {
         //效验通过后进行主体操作
         Bankcard newBankcard = null;
         try {
+            bankcard.setCardId(bankcardService.getCardId());
             newBankcard = bankcardService.insertBankCard(bankcard);
             model.addAttribute("bankcard",newBankcard);
         } catch (Exception e) {
@@ -104,51 +105,63 @@ public class BankcardController {
         return newBankcard;
     }
     @RequestMapping("updateAddBankcard")
-    public @ResponseBody Bankcard updateAddBankcard(Bankcard bankcard ,Model model){
+    public @ResponseBody Map<String,String> updateAddBankcard(Bankcard bankcard ,Model model){
         Bankcard newBankcard = null;
+        Map<String,String> map = new HashMap<String, String>();
         try {
             newBankcard = bankcardService.findBankCardByCardId(bankcard);
-            if (newBankcard.getReportLoss()!=1) {
-                newBankcard.setBalance(newBankcard.getBalance() + bankcard.getBalance());
-                newBankcard = bankcardService.updateBankCard(newBankcard);
-                Transaction transaction = new Transaction();
-                transaction.setCardId(newBankcard.getCardId());
-                transaction.setTransanctionDate(new Date());
-                transaction.setTransanctionType("存入");
-                transaction.setTransanctionPay(bankcard.getBalance());
-                transaction.setRemarks("银行卡为："+ newBankcard.getCardId() + "的用户存入现金:"+bankcard.getBalance()+newBankcard.getCurrencyType());
-                transactionService.insertTransaction(transaction);
-            }else{
-                newBankcard=null;
+            if (bankcard.getPassword().equals(newBankcard.getPassword())) {
+                if (newBankcard.getReportLoss() != 1) {
+                    newBankcard.setBalance(newBankcard.getBalance() + bankcard.getBalance());
+                    newBankcard = bankcardService.updateBankCard(newBankcard);
+                    Transaction transaction = new Transaction();
+                    transaction.setCardId(newBankcard.getCardId());
+                    transaction.setTransanctionDate(new Date());
+                    transaction.setTransanctionType("存入");
+                    transaction.setTransanctionPay(bankcard.getBalance());
+                    transaction.setRemarks("银行卡为：" + newBankcard.getCardId() + "的用户存入现金:" + bankcard.getBalance() + newBankcard.getCurrencyType());
+                    transactionService.insertTransaction(transaction);
+                    map.put("msg","存款成功！");
+                } else {
+                    map.put("msg","该用户为挂失状态，无法进行取款操作！");
+                }
+            } else {
+                map.put("msg","支付密码错误！");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return newBankcard;
+        return map;
     }
 
     @RequestMapping("updateRemBankcard")
-    public @ResponseBody Bankcard updateRemBankcard(Bankcard bankcard ,Model model){
+    public @ResponseBody Map<String,String> updateRemBankcard(Bankcard bankcard ,Model model){
         Bankcard newBankcard = null;
+        Map<String,String> map = new HashMap<String, String>();
         try {
             newBankcard = bankcardService.findBankCardByCardId(bankcard);
-            if (newBankcard.getReportLoss()!=1) {
-                newBankcard.setBalance(newBankcard.getBalance() - bankcard.getBalance());
-                newBankcard = bankcardService.updateBankCard(newBankcard);
-                Transaction transaction = new Transaction();
-                transaction.setCardId(newBankcard.getCardId());
-                transaction.setTransanctionDate(new Date());
-                transaction.setTransanctionType("取出");
-                transaction.setTransanctionPay(bankcard.getBalance());
-                transaction.setRemarks("银行卡为："+ newBankcard.getCardId() + "的用户取出现金:"+bankcard.getBalance()+newBankcard.getCurrencyType());
-                transactionService.insertTransaction(transaction);
-            }else{
-                newBankcard=null;
+            if (bankcard.getPassword().equals(newBankcard.getPassword())) {
+                if (newBankcard.getReportLoss() != 1) {
+                    newBankcard.setBalance(newBankcard.getBalance() - bankcard.getBalance());
+                    newBankcard = bankcardService.updateBankCard(newBankcard);
+                    Transaction transaction = new Transaction();
+                    transaction.setCardId(newBankcard.getCardId());
+                    transaction.setTransanctionDate(new Date());
+                    transaction.setTransanctionType("取出");
+                    transaction.setTransanctionPay(bankcard.getBalance());
+                    transaction.setRemarks("银行卡为：" + newBankcard.getCardId() + "的用户取出现金:" + bankcard.getBalance() + newBankcard.getCurrencyType());
+                    transactionService.insertTransaction(transaction);
+                    map.put("msg","取款成功！");
+                } else {
+                    map.put("msg","该用户为挂失状态，无法进行取款操作！");
+                }
+            } else {
+                map.put("msg","支付密码错误！");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return newBankcard;
+        return map;
     }
 
     @RequestMapping("Transfer")
@@ -182,15 +195,18 @@ public class BankcardController {
                 transaction.setCardId(TcardId);
                 transaction.setTransanctionDate(new Date());
                 transaction.setTransanctionType("存入");
-                transaction.setTransanctionPay(Tmoney * 6);
                 if (newBankcard1.getCurrencyType().equals("人民币")&&newBankcard2.getCurrencyType().equals("人民币")) {
                     transaction.setRemarks("银行卡为：" +cardId+"的用户使用"+Tmoney+"人民币"+"转给银行卡为:"+TcardId+"的用户"+Tmoney+"人民币");
+                    transaction.setTransanctionPay(Tmoney);
                 }else if (newBankcard1.getCurrencyType().equals("美元")&&newBankcard2.getCurrencyType().equals("美元")) {
                     transaction.setRemarks("银行卡为：" + cardId + "的用户使用"+Tmoney+"美元" + "转给银行卡为:" + TcardId + "的用户" + Tmoney + "美元");
+                    transaction.setTransanctionPay(Tmoney);
                 }else if (newBankcard1.getCurrencyType().equals("美元")&&newBankcard2.getCurrencyType().equals("人民币")) {
                     transaction.setRemarks("银行卡为：" + cardId + "的用户使用"+Tmoney+"美元" + "转给银行卡为:" + TcardId + "的用户" + Tmoney * 6 + "人民币");
+                    transaction.setTransanctionPay(Tmoney * 6);
                 }else if (newBankcard1.getCurrencyType().equals("人民币")&&newBankcard2.getCurrencyType().equals("美元")) {
                     transaction.setRemarks("银行卡为：" + cardId + "的用户使用"+Tmoney+"人民币" + "转给银行卡为:" + TcardId + "的用户" + Tmoney / 6 + "美元");
+                    transaction.setTransanctionPay(Tmoney / 6 );
                 }
                 transactionService.insertTransaction(transaction);
             }

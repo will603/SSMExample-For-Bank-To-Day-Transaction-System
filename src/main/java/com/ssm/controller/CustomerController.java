@@ -33,6 +33,7 @@ public class CustomerController {
         }
         //效验通过后进行主体操作
         Customer newCustomer = null;
+
         try {
             newCustomer = customerService.inserCustomer(customer);
             model.addAttribute("customer",newCustomer);
@@ -79,4 +80,5 @@ public class CustomerController {
         session.invalidate();
         return "login";
     }
+
 }

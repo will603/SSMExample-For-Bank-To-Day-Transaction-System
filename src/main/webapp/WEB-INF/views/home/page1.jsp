@@ -26,7 +26,7 @@
 <h2>银行开户</h2>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <th>银行卡号:</th><td>&nbsp;<input type="number" name="cardId" id="cardId"/></td>
+        <th>银行卡号:</th><td>&nbsp;<span>系统默认生成</span></td>
     </tr>
     <tr>
         <th>顾客编号:</th><td>&nbsp;<input type="text" readonly="true" name="custId" id="custId" value="${sessionScope.customer.custId}"/></td>
@@ -59,14 +59,14 @@
         <th>支付密码:</th><td>&nbsp;<input type="password" name="password" id="password"></td>
     </tr>
     <tr>
-        <th></th><td>&nbsp;<button type="submit" onclick="addSubmit()">修改</button></td>
+        <th></th><td>&nbsp;<button type="submit" onclick="addSubmit()">提交开户</button></td>
     </tr>
 </table>
 <script type="text/javascript">
     function addSubmit() {
         var d = new Date();
         var params = {};
-        params.cardId=$("#cardId").val();
+        //params.cardId=$("#cardId").val();  后台随机生成
         params.custId=$("#custId").val();
         params.createDate=new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().replace("T", " ").replace(/\..+$/,"");
         params.createMoney=$("#createMoney").val();
@@ -82,7 +82,12 @@
             dataType:"json",
             // contentType: "application/json; charset=utf-8",
             success:function (data) {
-                window.location.href="<%=basePath%>getSiteInfo.action"
+                if (data!=null) {
+                    alert("您银行卡号为："+data.cardId);
+                    window.location.href = "<%=basePath%>getSiteInfo.action"
+                }else{
+                    alert("出现异常情况，开户失败!");
+                }
             },
             error:function(data){
                 alert("出现异常情况，开户失败!");

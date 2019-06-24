@@ -54,4 +54,11 @@ public interface BankcardService {
      * @throws Exception
      */
     public boolean Transfer(String cardId,Double Tmoney,String TcarId) throws Exception;
+
+    /**
+     * 随机生成银行卡号
+     * @return 银行卡号
+     * @throws Exception
+     */
+    public String getCardId() throws Exception;
 }

@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Bankcard {
 
-    @Size(min = 19,max = 19,message = "bankcard.card.length.error",groups = ValidGroupByBankcard.class)
+//    @Size(min = 19,max = 19,message = "bankcard.card.length.error",groups = ValidGroupByBankcard.class)
     private String cardId;
 
     private Integer custId;
